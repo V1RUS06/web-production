@@ -1,4 +1,13 @@
 {
+  "": "",
+  "        Lorem ipsum dolor sit amet, conse ctetur adipisicing elit": {
+    " Ad adipisci asperiores beatae deserunt ducimus harum magnam mollitia porro quaerat quidem": {
+      "\n": "        Lorem ipsum dolor sit amet, conse ctetur adipisicing elit. Ad adipisci asperiores beatae deserunt ducimus harum magnam mollitia porro quaerat quidem.\\n"
+    }
+  },
+  "Lorem ipsum dolor sit amet, conse ctetur adipisicing elit": {
+    " Ad adipisci asperiores beatae deserunt ducimus harum magnam mollitia porro quaerat quidem": "Lorem ipsum dolor sit amet, conse ctetur adipisicing elit. Ad adipisci asperiores beatae deserunt ducimus harum magnam mollitia porro quaerat quidem"
+  },
   "throw error": "throw error",
   "Войти": "Войти",
   "Выбросить ошибку": "Выбросить ошибку",
@@ -9,13 +18,7 @@
   "Переключить": "Переключить",
   "Произошла непредвиденная ошибка": "Произошла непредвиденная ошибка",
   "Страница не найдена": "Страница не найдена",
-  "Язык": "Язык",
-  "        Lorem ipsum dolor sit amet, conse ctetur adipisicing elit": {
-    " Ad adipisci asperiores beatae deserunt ducimus harum magnam mollitia porro quaerat quidem": {
-      "\n": "        Lorem ipsum dolor sit amet, conse ctetur adipisicing elit. Ad adipisci asperiores beatae deserunt ducimus harum magnam mollitia porro quaerat quidem.\\n"
-    }
-  },
-  "Lorem ipsum dolor sit amet, conse ctetur adipisicing elit": {
-    " Ad adipisci asperiores beatae deserunt ducimus harum magnam mollitia porro quaerat quidem": "Lorem ipsum dolor sit amet, conse ctetur adipisicing elit. Ad adipisci asperiores beatae deserunt ducimus harum magnam mollitia porro quaerat quidem"
-  }
+  "Увеличить": "Увеличить",
+  "Уменьшить": "Уменьшить",
+  "Язык": "Язык"
 }

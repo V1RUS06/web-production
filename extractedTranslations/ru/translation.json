@@ -9,5 +9,13 @@
   "Переключить": "Переключить",
   "Произошла непредвиденная ошибка": "Произошла непредвиденная ошибка",
   "Страница не найдена": "Страница не найдена",
-  "Язык": "Язык"
+  "Язык": "Язык",
+  "        Lorem ipsum dolor sit amet, conse ctetur adipisicing elit": {
+    " Ad adipisci asperiores beatae deserunt ducimus harum magnam mollitia porro quaerat quidem": {
+      "\n": "        Lorem ipsum dolor sit amet, conse ctetur adipisicing elit. Ad adipisci asperiores beatae deserunt ducimus harum magnam mollitia porro quaerat quidem.\\n"
+    }
+  },
+  "Lorem ipsum dolor sit amet, conse ctetur adipisicing elit": {
+    " Ad adipisci asperiores beatae deserunt ducimus harum magnam mollitia porro quaerat quidem": "Lorem ipsum dolor sit amet, conse ctetur adipisicing elit. Ad adipisci asperiores beatae deserunt ducimus harum magnam mollitia porro quaerat quidem"
+  }
 }

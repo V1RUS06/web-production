@@ -8,8 +8,8 @@ export interface LoginByUsernameProps {
   password: string
 }
 
-export const loginByUsername = createAsyncThunk<User, LoginByUsernameProps, {rejectValue: string}>(
-  'login/loginByUsername',
+export const LoginByUsername = createAsyncThunk<User, LoginByUsernameProps, {rejectValue: string}>(
+  'login/LoginByUsername',
   async (authData, thunkApi) => {
     try {
       const response = await axios.post<User>('http://localhost:8000/login', authData);

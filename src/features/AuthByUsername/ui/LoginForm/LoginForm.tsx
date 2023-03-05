@@ -6,7 +6,7 @@ import { Input } from 'shared/ui/Input/Input';
 import { useDispatch, useSelector, useStore } from 'react-redux';
 import { Text, TextTheme } from 'shared/ui/Text/Text';
 import { DynamicModuleLoader, ReducersList } from 'shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
-import { loginByUsername } from '../../model/services/loginByUsername/loginByUsername';
+import { LoginByUsername } from '../../model/services/LoginByUsername/LoginByUsername';
 import { getLoginLoading } from '../../model/selectors/getLoginLoading/getLoginLoading';
 import { getLoginError } from '../../model/selectors/getLoginError/getLoginError';
 import { getLoginUsername } from '../../model/selectors/getLoginUsername/getLoginUsername';
@@ -39,7 +39,7 @@ const LoginForm: FC<LoginFormProps> = ({ className }) => {
   }, [dispatch]);
 
   const onLoginClick = useCallback(() => {
-    dispatch(loginByUsername({ username, password }));
+    dispatch(LoginByUsername({ username, password }));
   }, [dispatch, password, username]);
 
   return (

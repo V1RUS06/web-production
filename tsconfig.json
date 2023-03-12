@@ -8,6 +8,7 @@
     "module": "ESNext",
     // В какую спецификацию компилируем: для поддержки большинства браузеров
     "target": "es5",
+    "strict": true,
     "jsx": "react-jsx",
     // Компилятор будет обрабатывать не только TS файлы, но и JS файлы
     "allowJs": true,
@@ -35,7 +36,7 @@
   },
   "ts-node": {
     "compilerOptions": {
-      "module": "CommonJS"
+      "module": "CommonJS",
     }
   },
   "include": [

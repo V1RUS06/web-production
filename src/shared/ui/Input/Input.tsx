@@ -26,7 +26,7 @@ export const Input = memo((props: InputProps) => {
     ...otherProps
   } = props;
 
-  const inputRef = useRef<HTMLInputElement>(null);
+  const inputRef = useRef<HTMLInputElement | null>(null);
 
   const onHandleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     onChange?.(e.target.value);
@@ -34,7 +34,7 @@ export const Input = memo((props: InputProps) => {
 
   useEffect(() => {
     if (autofocus) {
-      inputRef.current.focus();
+      inputRef.current?.focus();
     }
   }, [autofocus]);
 
@@ -42,17 +42,20 @@ export const Input = memo((props: InputProps) => {
     <div className={classNames(cls.InputWrapper, {}, [className])}>
       {placeholder && (
         <div className={classNames(cls.placeholder)}>
-          {`${placeholder}`}
+          {`${placeholder} >`}
         </div>
       )}
-      <input
-        ref={inputRef}
-        type={type}
-        value={value}
-        onChange={onHandleChange}
-        className={cls.input}
-        {...otherProps}
-      />
+      <div>
+        <input
+          ref={inputRef}
+          type={type}
+          value={value}
+          onChange={onHandleChange}
+          className={cls.input}
+          {...otherProps}
+        />
+      </div>
+
     </div>
   );
 });

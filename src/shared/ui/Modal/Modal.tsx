@@ -1,9 +1,8 @@
 import React, {
-  FC, ReactNode, useCallback, useEffect, useRef, useState,
+  FC, MutableRefObject, ReactNode, useCallback, useEffect, useRef, useState,
 } from 'react';
-import { classNames } from 'shared/lib/classNames/classNames';
+import { classNames, Mods } from 'shared/lib/classNames/classNames';
 import { Portal } from 'shared/ui/Portal/Portal';
-import { useTheme } from 'app/providers/ThemeProvider';
 import cls from './Modal.module.scss';
 
 interface ModalProps {
@@ -27,7 +26,7 @@ export const Modal: FC<ModalProps> = (props) => {
 
   const [isClosing, setIsClosing] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
-  const timerRef = useRef<ReturnType<typeof setTimeout>>();
+  const timerRef = useRef() as MutableRefObject<ReturnType<typeof setTimeout>>;
 
   useEffect(() => {
     if (isOpen) {
@@ -55,7 +54,7 @@ export const Modal: FC<ModalProps> = (props) => {
     e.stopPropagation();
   };
 
-  const mods = {
+  const mods: Mods = {
     [cls.opened]: isOpen,
     [cls.isClosing]: isClosing,
   };
